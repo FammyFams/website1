@@ -1,28 +1,22 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-    <title>logins</title>
-    <script type="text/javascript">
-        var s = "";
-
-        while (s != "12345") {
-            s = prompt("please enter your password");
-            if (s == "12345") {
-                window.location.href = "home.html"; 
-
-            } else {
-                alert("Incorrect password-Try again");
-                break;
-
-            }
-        }
-
-    </script>
+    <link rel="stylesheet" type="text/css" href="logins.css">
 </head>
 
 <body>
-</body>
-
-</html>
+    <div class="loginbox">
+        <img src="avatar.jpg" class="avatar">
+        <h1>Login Here</h1>
+        <form>
+            <p>Username</p>
+            <input type="text" name="" placeholder="Enter Username" required>
+            <p>Password</p>
+            <input type="password" name="" placeholder="Enter Password" required>
+            <input type="submit" name="" value="Login">
+            <a href="#">Lost your password?</a><br>
+            <a href="#">Don't have an account?</a>
+        </form>
+    </div>
+</body></html>
